@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intro to Web Development</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      animation: slideUp 1s ease-out;
+    }
+
+    article header {
+      border-bottom: 2px solid #e0e0e0;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+
+    article h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #333;
+    }
+
+    article p {
+      color: #666;
+    }
+
+    section {
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: slideIn 0.8s forwards;
+      animation-delay: 0.5s;
+    }
+
+    section:nth-of-type(2) {
+      animation-delay: 0.7s;
+    }
+
+    section:nth-of-type(3) {
+      animation-delay: 0.9s;
+    }
+
+    section h2 {
+      font-size: 1.6em;
+      color: #444;
+      margin-bottom: 10px;
+      border-left: 4px solid #007acc;
+      padding-left: 10px;
+      transition: color 0.3s ease;
+    }
+
+    section h2:hover {
+      color: #005f99;
+    }
+
+    section p {
+      font-size: 1.05em;
+    }
+
+    footer {
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+      font-style: italic;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      article h1 {
+        font-size: 1.6em;
+      }
+
+      section h2 {
+        font-size: 1.3em;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <article>
+      <header>
+        <h1>Getting Started with Web Development</h1>
+        <p>By James • May 22, 2025</p>
+      </header>
+
+      <section>
+        <h2>This is section title</h2>
+        <p>And this is the content of the section</p>
+      </section>
+
+      <section>
+        <h2>Dear Issac</h2>
+        <p>Articles can contain many sections as you can see</p>
+        <p>And sections can contain title and content</p>
+      </section>
+
+      <section>
+        <h2>Do you understand</h2>
+        <p>😁😁😁😁😁😁😁😁😁😁😁😁😁😁🫡🫡🫡</p>
+      </section>
+
+      <footer>
+        <p>Hope you understand this.</p>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
