@@ -294,9 +294,3 @@ if (!customElements.get('cart-note')) {
     }
   );
 }
-
-// git cloneElement{
-// git clone
-// git add .
-// git commit -m ""
-// }
