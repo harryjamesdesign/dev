@@ -1,3 +1,5 @@
+const { cloneElement } = require("react");
+
 class CartRemoveButton extends HTMLElement {
   constructor() {
     super();
@@ -292,3 +294,9 @@ if (!customElements.get('cart-note')) {
     }
   );
 }
+
+// git cloneElement{
+// git clone
+// git add .
+// git commit -m ""
+// }
